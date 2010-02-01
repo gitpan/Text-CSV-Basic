@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Basic.t
+lib/Text/CSV/Basic.pm
