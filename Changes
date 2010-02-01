@@ -1,6 +1,6 @@
 Revision history for Perl extension Basic.
 
-1.02  Sun Jan 31 20:15:43 2010
+1.03  Sun Jan 31 20:15:43 2010
 	- original version; created by h2xs 1.23 with options
 		-AXc -n Basic
 

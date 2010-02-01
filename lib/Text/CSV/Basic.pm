@@ -2,7 +2,7 @@ package Text::CSV::Basic;
 use strict;
 
 BEGIN {
-    $Text::CSV::Basic::VERSION = '1.02';
+    $Text::CSV::Basic::VERSION = '1.03';
 }
 
 
@@ -91,7 +91,8 @@ sub getfield{
 }
 
 1;
-
+__END__
+=pod
 
 =head1 NAME
 
@@ -99,12 +100,12 @@ Text::CSV::Basic - Get data from Text CSV file using header field.
 
 =head1 VERSION
 
-    1.02 
+    1.03
 
 =head1 SYNOPSIS
 
 	my $obj = Text::CSV::Basic->new;
-	my @data = $obj->getfield($field);
+	my @data = $obj->getfield('field_name');
 	print @$_ foreach @data;
 
 =head1 DESCRIPTION
@@ -115,14 +116,14 @@ Using this module you can parse a simple text csv file with header field.
 
 =head2 new
 
-	my $obj = Text::CSV::Basic->new($filename,$field_sep);
+	my $obj = Text::CSV::Basic->new('filename','field_sep');
 
 Construct a new parser. This takes two parameters csv filename and field seperator.
 Both parameters are mandatory.
 
 =head2 getfield 
 
-	my @data = $obj->getfield($fieldname);
+	my @data = $obj->getfield('fieldname');
 
 Returns  a list of data.
 
